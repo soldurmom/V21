@@ -1,0 +1,13 @@
+
+# HTID:18724839: DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES BELOW
+php_value display_errors 1
+# DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES ABOVE HTID:18724839:
+
+RewriteEngine On  
+  
+RewriteCond %{SCRIPT_FILENAME} !-d  
+RewriteCond %{SCRIPT_FILENAME} !-f  
+
+RewriteRule ^(.*)$ ./index.php?route=$1
+
+AddDefaultCharset WINDOWS-1251
